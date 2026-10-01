@@ -21,12 +21,10 @@ class DatabaseSeeder extends Seeder
 
         $this->call(AssetSeeder::class);
         User::updateOrCreate(
-            [
-                'email' => 'demo@marketwatch.test'
-            ],
+            ['email' => 'demo@marketwatch.test'],
             [
                 'name'  => 'Usuário Demo',
-                'password'  => Hash::make('12345678'),
+                'password'  => 12345678,
                 'status'    => true
             ]
         );

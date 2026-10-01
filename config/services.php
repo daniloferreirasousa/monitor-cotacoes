@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'quotes_api' => [
+        'url' => env('QUOTE_API_URL'),
+    ],
+
 ];

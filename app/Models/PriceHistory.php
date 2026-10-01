@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class PriceHystory extends Model
+class PriceHistory extends Model
 {
     use HasFactory;
 
@@ -22,7 +22,7 @@ class PriceHystory extends Model
     protected function casts(): array
     {
         return [
-            'price' => 'decimal:4',
+            'price'         => 'decimal:4',
             'high_price'    => 'decimal:4',
             'low_price'     => 'decimal:4',
             'fetched_at'    => 'datetime'
