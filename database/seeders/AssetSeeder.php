@@ -12,7 +12,7 @@ class AssetSeeder extends Seeder
      */
     public function run(): void
     {
-        foreach ([
+        $assets = [
             [
                 'code' => 'USD',
                 'name' => 'Dólar Americano',
