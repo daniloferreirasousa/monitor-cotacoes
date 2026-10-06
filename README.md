@@ -2,7 +2,9 @@
 
 Sistema educacional desenvolvido em **Laravel** com o objetivo de praticar, de forma integrada, conceitos de desenvolvimento de sistemas utilizando PHP, Laravel, banco de dados, consumo de API, autenticação, comandos Artisan, Scheduler, envio de e-mails e testes automatizados.
 
-O projeto foi desenvolvido durante as aulas, permitindo que os alunos acompanhassem a construção das principais funcionalidades de uma aplicação web.
+O projeto foi desenvolvido durante as aulas pelos alunos, permitindo que os alunos realizassem a construção das principais funcionalidades de uma aplicação web.
+
+Esta versão representa o gabarito do projeto finalizado pelo professor, podendo estar divergente a versão desenvolvida por cada aluno.
 
 ---
 
@@ -50,11 +52,7 @@ O projeto utiliza os recursos de autenticação do próprio Laravel.
 
 ### 📷 Screenshot — Login
 
-> **Inserir imagem aqui**
-
-```text
-docs/images/login.png
-```
+![Login](docs/images/login.png)
 
 ---
 
@@ -66,11 +64,7 @@ As informações são obtidas através da AwesomeAPI e armazenadas no banco de d
 
 ### 📷 Screenshot — Tela principal
 
-> **Inserir imagem aqui**
-
-```text
-docs/images/dashboard.png
-```
+![Dashboard](docs/images/dashboard.png)
 
 ---
 
@@ -99,11 +93,7 @@ Cada atualização válida de uma cotação pode gerar um registro no histórico
 
 ### 📷 Screenshot — Histórico
 
-> **Inserir imagem aqui**
-
-```text
-docs/images/historico.png
-```
+![Histórico](docs/images/historico.png)
 
 ---
 
@@ -124,19 +114,11 @@ Quando a condição é atingida, o sistema realiza o disparo do alerta.
 
 ### 📷 Screenshot — Lista de alertas
 
-> **Inserir imagem aqui**
-
-```text
-docs/images/alertas.png
-```
+![Lista de Alertas](docs/images/alertas.png)
 
 ### 📷 Screenshot — Criando um alerta
 
-> **Inserir imagem aqui**
-
-```text
-docs/images/criar-alerta.png
-```
+![Criar Alerta](docs/images/criar-alerta.png)
 
 ---
 
@@ -146,15 +128,7 @@ Quando um alerta é atingido, o sistema envia uma notificação por e-mail ao us
 
 Durante o desenvolvimento, o envio pode ser configurado para o `log` do Laravel, permitindo verificar o conteúdo da mensagem sem utilizar um serviço de e-mail real.
 
-### 📷 Screenshot — E-mail do alerta
 
-> **Inserir imagem aqui**
-
-```text
-docs/images/email-alerta.png
-```
-
----
 
 # ⏱️ Atualização automática
 
@@ -358,76 +332,6 @@ E limpar os caches da aplicação:
 
 ```bash
 php artisan optimize:clear
-```
-
----
-
-# 📸 Demonstração do sistema
-
-Esta seção pode ser utilizada para apresentar o sistema funcionando.
-
-## Login
-
-> **Inserir screenshot aqui**
-
-```text
-docs/images/login.png
-```
-
-## Dashboard / Cotações
-
-> **Inserir screenshot aqui**
-
-```text
-docs/images/dashboard.png
-```
-
-## Detalhes do ativo
-
-> **Inserir screenshot aqui**
-
-```text
-docs/images/ativo.png
-```
-
-## Histórico de preços
-
-> **Inserir screenshot aqui**
-
-```text
-docs/images/historico.png
-```
-
-## Lista de alertas
-
-> **Inserir screenshot aqui**
-
-```text
-docs/images/alertas.png
-```
-
-## Cadastro de alerta
-
-> **Inserir screenshot aqui**
-
-```text
-docs/images/criar-alerta.png
-```
-
-## Alerta atingido
-
-> **Inserir screenshot aqui**
-
-```text
-docs/images/alerta-disparado.png
-```
-
-## E-mail recebido
-
-> **Inserir screenshot aqui**
-
-```text
-docs/images/email-alerta.png
 ```
 
 ---
