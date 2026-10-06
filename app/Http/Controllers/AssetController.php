@@ -47,7 +47,7 @@ class AssetController extends Controller
 
         $topLoser = Asset::orderBy('variation_24h')->first();
 
-        $activeAlertCount = $request->user()
+        $activeAlertsCount = $request->user()
             ->alerts()
             ->where('is_triggered', false)
             ->count();

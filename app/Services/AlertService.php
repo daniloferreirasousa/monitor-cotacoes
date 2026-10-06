@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Mail\PriceAlertTriggered;
 use App\Models\PriceAlert;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
@@ -55,7 +56,7 @@ class AlertService
                     try {
                         $triggeredAt = now();
 
-                        Mail::to($alert->user->mail)
+                        Mail::to($alert->user->email)
                             ->send(
                                 new PriceAlertTriggered(
                                     $alert,

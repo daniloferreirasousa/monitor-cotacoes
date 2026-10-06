@@ -16,9 +16,9 @@ Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth')->n
 
 Route::middleware('auth')->group(function () {
 
-    Route::get('/', [AssetController::class, 'index'])->name('asset.index');
+    Route::get('/', [AssetController::class, 'index'])->name('assets.index');
 
-    Route::post('/assets/sync', [AssetController::class, 'sync'])->name('asset');
+    Route::post('/assets/sync', [AssetController::class, 'sync'])->name('assets.sync');
 
     Route::get('/assets/{asset}', [AssetController::class, 'show'])->name('assets.show');
 

@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\View;
+use Illuminate\View\View;
 
 class AuthController extends Controller
 {
@@ -34,7 +34,7 @@ class AuthController extends Controller
 
         return back()
             ->withErrors([
-                'email' => 'E-mail pi senha inválidos.'
+                'email' => 'E-mail ou senha inválidos.'
             ])
             ->onlyInput('email');
     }
